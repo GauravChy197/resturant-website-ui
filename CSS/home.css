@@ -12,7 +12,7 @@
     gap: 50px;
     flex: 1;
     width: 1400px;
-   
+
     margin: auto;
 
 }
@@ -20,7 +20,7 @@
 .left {
     width: 544px;
     padding: 80px 0 0 0;
-   
+
 
 }
 
@@ -79,26 +79,23 @@
 .right {
     width: 544px;
     height: 673px;
-    
+
 }
 
 
 .image {
     height: 647px;
     width: 518px;
-  
+    transform: rotate(2deg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border: 10px solid #E4E2DE;
-    
-
-
+    border-radius: 10px 20px;
 }
 
-img{
+img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
