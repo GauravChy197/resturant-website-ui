@@ -246,3 +246,93 @@ hr {
 }
 
 
+.third {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 128px 72px;
+    background-color: #FBF9F5;
+    position: relative;
+    
+}
+
+
+ .bigimg {
+    width: 660px;
+    height: 398px;
+    padding: 10px;
+    box-shadow: 0 0 2px rgb(197, 196, 196);
+    background-color: #FFFFFF;
+    
+}
+
+.smallimage {
+    width: 328px;
+    height: 190px;
+    padding: 10px;
+    position: absolute;
+    right: 630px;
+    bottom:80px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 2px rgb(197, 196, 196);
+}
+.smallimage img{
+    object-fit: cover;
+}
+
+
+.chefdesc{
+        h3{
+            font-size: 12px;
+            letter-spacing: 1.2px;
+            color: #7A5B54;
+            background-color: #FFD7CE;
+            padding: 4px 16px;
+            margin-bottom: 32px;
+            display: inline-block;
+            border-radius: 12px
+        }
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: -0.4px;
+            color: #061B0E;
+        }
+        
+        h2{
+            font-size: 42px;
+            color:#755750;
+            margin-bottom: 32px;
+        }
+        p{
+            font-size: 16px;
+            color: 434843;
+            font-family:"Inter", sans-serif;
+            margin-bottom: 30px;
+        }
+        span{
+            font-weight: bold;
+        }
+
+        .cookinginfo{
+            background-color: #EFEEEA;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 1px 1px 8px rgb(196, 194, 194);
+        }
+        .cookinginfo p{
+            font-size: 16px;
+            font-style: italic;
+        }
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: #061B0E;
+            letter-spacing: 0.7px;
+        }
+        a span{
+            font-size: 16px;
+            font-weight: 900;
+        }
+}
