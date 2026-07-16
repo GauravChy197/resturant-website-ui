@@ -1,5 +1,5 @@
 * {
-    
+
     @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 }
 
@@ -10,7 +10,7 @@
     padding: 80px 40px 180px 80px;
     gap: 100px;
     flex-grow: 1;
-    
+
 
     margin: auto;
 
@@ -98,18 +98,19 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
 
-.middle{
+.middle {
     background-color: #F5F3EF;
     padding: 80px 40px 180px 80px;
 }
 
-.middle h1{
+.middle h1 {
     text-align: center;
 }
 
-.card{
+.card {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -117,75 +118,124 @@ img {
     flex: 1;
 }
 
-.leftcard{
+.leftcard {
     position: relative;
     margin-top: 30px;
     width: 640px;
-    padding: 20px 20px;
+    padding: 32px;
     background-color: #FFFFFF;
     border-radius: 24px;
     box-shadow: 1px 1px 30px #d5d5d5;
 }
-.middleimg{
-    width: 540;
-    width: 100%;
-}
 
-.details{
+
+.details {
     margin-top: 20px;
 }
 
-.details h2{
+.details h2 {
     font-size: 32px;
-    color:#061B0E ;
+    color: #061B0E;
     font-weight: 600;
 }
 
-.details p{
+.details p {
     margin: 10px 0;
     font-size: 16px;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-bottom: 30px;
 }
 
-hr{
+hr {
     color: gray;
     width: 80%;
     margin: auto;
     opacity: 0.5;
 }
 
-.capsule{
+.capsule {
     margin: 40px 0 20px 0;
     font-size: 10px;
     cursor: pointer;
 }
 
-.capsule span{
+.capsule span {
     background-color: #EFEEEA;
-    padding: 4px 12px ;
+    padding: 4px 12px;
     border-radius: 12px;
     letter-spacing: -0.5px;
     font-weight: 600;
     margin: 0 8px 0 0;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     transform: rotate(1.5deg);
+    letter-spacing: 0.5px;
 }
-.price{
+
+.price {
     position: absolute;
     right: 20px;
     top: 80%;
     transform: rotate(10deg);
     font-size: 16px;
-    font-style: italic ;
+    font-style: italic;
     color: #755750;
 }
 
-.leftcard img{
+.leftcard img {
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
 }
-.rightcard{
+
+.rightcard {
     width: 445px;
+    padding: 28px;
+    background-color: #1B3022;
+    border-radius: 25px;
+    position: relative;
+    height: 613px;
+    transform: translateY(100px) rotate(1.5deg);
+
+    .concktailimg {
+        object-fit: cover;
+        height: 390px;
+        margin-bottom: 24px;
+    }
+
+    img {
+        object-fit: cover;
+        border-radius: 12px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .cocktaildetail h2 {
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .cocktaildetail p {
+        font-size: 16px;
+        font-style: italic;
+        color: #819986;
+        margin-bottom: 24px;
+    }
+
+    .price1 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFD7CE;
+    }
+
+    button {
+        position: absolute;
+        right: 28px;
+        bottom: 60px;
+        background-color: #1B3022;
+        border: none;
+        color: #FFFFFF;
+        font-size: 14px;
+    }
 }
