@@ -63,8 +63,8 @@
     transition: all 0.4s ease;
 }
 
-.explore:hover{
-    transform:translateY(-3px);
+.explore:hover {
+    transform: translateY(-3px);
 }
 
 .left a {
@@ -244,3 +244,5 @@ hr {
         cursor: pointer;
     }
 }
+
+
