@@ -122,6 +122,161 @@ img {
     flex: 1;
 }
 
+.review {
+    padding: 96px 40px;
+    background-color: #1B3022;
+
+
+    h1 {
+        text-align: center;
+        margin-bottom: 80px;
+        font-size: 32px;
+        font-weight: 600;
+        color: #FFFFFF;
+        letter-spacing: -0.8px;
+        font-family: "Playfair Display", serif;
+    }
+
+    .card {
+        display: flex;
+    }
+
+    .cardone {
+        height: 325px;
+        width: 318px;
+        padding: 32px;
+        background: linear-gradient(135deg, #2e6b4f, #2e6b4f);
+        opacity: 0.95;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+
+        p {
+            font-size: 20px;
+            font-style: italic;
+            color: #FFFFFF;
+            margin-bottom: 24px;
+
+            span {
+                color: #FFD7CE;
+            }
+        }
+
+        .name {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            .circle {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: #FFD7CE;
+            }
+
+            h3 {
+                font-size: 12px;
+                color: #65b777;
+                letter-spacing: 1.2px;
+                font-weight: 500;
+                font-family: "Inter", sans-serif;
+
+            }
+        }
+    }
+
+    .cardtwo {
+        height: 325px;
+        width: 350px;
+        padding: 40px;
+        background-color: #755750;
+        border-radius: 12px;
+        transform: rotate(2deg);
+        transition: all 0.3s ease;
+
+        p {
+            font-size: 21px;
+            font-style: italic;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+        }
+
+        .name2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .circle {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: #1B3022;
+            }
+
+            h3 {
+                font-size: 12px;
+                color: #FFFFFF;
+                letter-spacing: 1.2px;
+                font-weight: 500;
+                font-family: "Inter", sans-serif;
+
+            }
+        }
+    }
+
+    .cardthree {
+        transform: translateY(20px);
+        padding: 32px;
+        height: 277px;
+        border-radius: 12px;
+        width: 318px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(236, 231, 231, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        color: white;
+        transition: all 0.3s ease;
+
+
+        p {
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            margin-bottom: 24px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .namethree {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .circle {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: #482100;
+            }
+
+            h3 {
+                font-size: 12px;
+                color: #FFFFFF;
+                letter-spacing: 1.2px;
+                font-weight: lighter;
+                font-family: "Inter", sans-serif;
+            }
+        }
+    }
+}
+
+.cardone:hover,
+.cardthree:hover {
+    transform: translateY(-10px);
+}
+
+.cardtwo:hover {
+    transform: rotate(2deg) translateY(-10px);
+}
+
 .leftcard {
     position: relative;
     margin-top: 30px;
@@ -252,17 +407,17 @@ hr {
     padding: 128px 72px;
     background-color: #FBF9F5;
     position: relative;
-    
+
 }
 
 
- .bigimg {
+.bigimg {
     width: 660px;
     height: 398px;
     padding: 10px;
     box-shadow: 0 0 2px rgb(197, 196, 196);
     background-color: #FFFFFF;
-    
+
 }
 
 .smallimage {
@@ -271,68 +426,75 @@ hr {
     padding: 10px;
     position: absolute;
     right: 630px;
-    bottom:80px;
+    bottom: 80px;
     background-color: #FFFFFF;
     box-shadow: 0 0 2px rgb(197, 196, 196);
 }
-.smallimage img{
+
+.smallimage img {
     object-fit: cover;
 }
 
 
-.chefdesc{
-        h3{
-            font-size: 12px;
-            letter-spacing: 1.2px;
-            color: #7A5B54;
-            background-color: #FFD7CE;
-            padding: 4px 16px;
-            margin-bottom: 32px;
-            display: inline-block;
-            border-radius: 12px
-        }
-        h1{
-            font-size: 40px;
-            font-weight: bold;
-            letter-spacing: -0.4px;
-            color: #061B0E;
-        }
-        
-        h2{
-            font-size: 42px;
-            color:#755750;
-            margin-bottom: 32px;
-        }
-        p{
-            font-size: 16px;
-            color: 434843;
-            font-family:"Inter", sans-serif;
-            margin-bottom: 30px;
-        }
-        span{
-            font-weight: bold;
-        }
+.chefdesc {
+    h3 {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        color: #7A5B54;
+        background-color: #FFD7CE;
+        padding: 4px 16px;
+        margin-bottom: 32px;
+        display: inline-block;
+        border-radius: 12px
+    }
 
-        .cookinginfo{
-            background-color: #EFEEEA;
-            padding: 24px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 1px 1px 8px rgb(196, 194, 194);
-        }
-        .cookinginfo p{
-            font-size: 16px;
-            font-style: italic;
-        }
-        a{
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            color: #061B0E;
-            letter-spacing: 0.7px;
-        }
-        a span{
-            font-size: 16px;
-            font-weight: 900;
-        }
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: -0.4px;
+        color: #061B0E;
+    }
+
+    h2 {
+        font-size: 42px;
+        color: #755750;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 16px;
+        color: 434843;
+        font-family: "Inter", sans-serif;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .cookinginfo {
+        background-color: #EFEEEA;
+        padding: 24px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 1px 1px 8px rgb(196, 194, 194);
+    }
+
+    .cookinginfo p {
+        font-size: 16px;
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: #061B0E;
+        letter-spacing: 0.7px;
+    }
+
+    a span {
+        font-size: 16px;
+        font-weight: 900;
+    }
 }

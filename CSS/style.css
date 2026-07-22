@@ -33,13 +33,22 @@ header h1 {
 nav a {
     font-family: "Inter", sans-serif;
     text-decoration: none;
-    color: #061B0E;
+    color: #434843;
     font-size: 14px;
     letter-spacing: 0.7px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
+.active{
+    color: #061B0E;
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(-3px);
+    border-bottom:  2px solid black;
+
+    
+}
 nav a:hover {
     transform: translateY(-5px);
     color: black;
@@ -69,237 +78,129 @@ nav {
 
 }
 
-.review {
-    padding: 96px 40px;
-    background-color: #1B3022;
-
-
-    h1 {
-        text-align: center;
-        margin-bottom: 80px;
-        font-size: 32px;
-        font-weight: 600;
-        color: #FFFFFF;
-        letter-spacing: -0.8px;
-        font-family: "Playfair Display", serif;
-    }
-
-    .card {
-        display: flex;
-    }
-
-    .cardone {
-        height: 325px;
-        width: 318px;
-        padding: 32px;
-        background: linear-gradient(135deg, #2e6b4f, #2e6b4f);
-        opacity: 0.95;
-        border-radius: 12px;
-        transition: all 0.3s ease;
-
-        p {
-            font-size: 20px;
-            font-style: italic;
-            color: #FFFFFF;
-            margin-bottom: 24px;
-
-            span {
-                color: #FFD7CE;
-            }
-        }
-
-        .name {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-
-            .circle {
-                height: 40px;
-                width: 40px;
-                border-radius: 50%;
-                background-color: #FFD7CE;
-            }
-
-            h3 {
-                font-size: 12px;
-                color: #65b777;
-                letter-spacing: 1.2px;
-                font-weight: 500;
-                font-family: "Inter", sans-serif;
-
-            }
-        }
-    }
-
-    .cardtwo {
-        height: 325px;
-        width: 350px;
-        padding: 40px;
-        background-color: #755750;
-        border-radius: 12px;
-        transform: rotate(2deg);
-        transition: all 0.3s ease;
-
-        p {
-            font-size: 21px;
-            font-style: italic;
-            color: #FFFFFF;
-            margin-bottom: 32px;
-        }
-
-        .name2 {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            .circle {
-                height: 40px;
-                width: 40px;
-                border-radius: 50%;
-                background-color: #1B3022;
-            }
-
-            h3 {
-                font-size: 12px;
-                color: #FFFFFF;
-                letter-spacing: 1.2px;
-                font-weight: 500;
-                font-family: "Inter", sans-serif;
-
-            }
-        }
-    }
-
-    .cardthree {
-        transform: translateY(20px);
-        padding: 32px;
-        height: 277px;
-        border-radius: 12px;
-        width: 318px;
-        background: rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(236, 231, 231, 0.2);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-        color: white;
-        transition: all 0.3s ease;
-
-
-        p {
-            font-size: 16px;
-            font-family: "Inter", sans-serif;
-            margin-bottom: 24px;
-            font-style: italic;
-            font-weight: lighter;
-        }
-
-        .namethree {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-
-            .circle {
-                height: 40px;
-                width: 40px;
-                border-radius: 50%;
-                background-color: #482100;
-            }
-
-            h3 {
-                font-size: 12px;
-                color: #FFFFFF;
-                letter-spacing: 1.2px;
-                font-weight: lighter;
-                font-family: "Inter", sans-serif;
-            }
-        }
-    }
-}
-
-.cardone:hover,
-.cardthree:hover {
-    transform: translateY(-10px);
-}
-
-.cardtwo:hover {
-    transform: rotate(2deg) translateY(-10px);
-}
 
 footer {
     display: flex;
-    padding: 80px 40px;
+    flex-direction: column;
+    padding: 80px 40px 0 40px;
     justify-content: space-evenly;
+    border-radius: 12px;
+    background-color: #E4E2DE;
 
-    P {
-        font-size: 16px;
-        font-family: "Inter", sans-serif;
-        color: #434843;
-        margin: 24px 0;
-    }
+    .footertop {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
 
-    h2 {
-        font-size: 14px;
-        color: #061B0E;
-        letter-spacing: 2.8px;
-        font-weight: 600;
-        font-family: "Inter", sans-serif;
 
-    }
-
-    .resturantdetail {
-        width: 266px;
-
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-
-        }
-        p{
-            line-height: 24px;
-        }
-    }
-
-    .experience {
-        width: 266px;
-
-    }
-
-    .company {
-        width: 266px;
-    }
-
-    .join {
-        width: 266px;
-
-        input{
-            border: none;
-            height: 51px;
-            width: 266px;
-            padding: 14px 12px;
-            box-shadow: 0 0 8px gray;
-            border-radius: 12px;
-        }
-        input::placeholder{
-            color:#434843;
+        P {
             font-size: 16px;
-            font-family: "Inter", sans-serif;          
-            
-        }
-        button{
-            margin-top: 24px;
-            padding: 16px 95px;
-            border: none;
-            border-radius: 12px;
-            background-color: #061B0E;
-            color: #FFFFFF;
-            font-size: 14px;
-            letter-spacing: 0.7px;
-            font-weight: 600;
-            box-shadow: 5px 5px 0 #061B0E;
-            transition: all 0.3s ease;
+            font-family: "Inter", sans-serif;
+            color: #434843;
+            margin: 24px 0;
         }
 
-        button:hover{
-            transform:translateY(-5px)
+        h2 {
+            font-size: 14px;
+            color: #061B0E;
+            letter-spacing: 2.8px;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+
+        }
+
+        .resturantdetail {
+            width: 266px;
+
+            h1 {
+                font-size: 24px;
+                font-weight: bold;
+
+            }
+
+            p {
+                line-height: 24px;
+            }
+        }
+
+        .experience {
+            width: 266px;
+
+        }
+
+        .company {
+            width: 266px;
+        }
+
+        .join {
+            width: 266px;
+
+            input {
+                border: none;
+                height: 51px;
+                width: 266px;
+                padding: 14px 12px;
+                box-shadow: 0 0 8px gray;
+                border-radius: 12px;
+            }
+
+            input::placeholder {
+                color: #434843;
+                opacity: 40%;
+                font-size: 16px;
+                font-family: "Inter", sans-serif;
+
+            }
+
+            button {
+                margin-top: 24px;
+                padding: 16px 95px;
+                border: none;
+                border-radius: 12px;
+                background-color: #061B0E;
+                color: #FFFFFF;
+                font-size: 14px;
+                letter-spacing: 0.7px;
+                font-weight: 600;
+                box-shadow: 5px 5px 0 #061B0E;
+                transition: all 0.3s ease;
+            }
+
+
+        }
+
+        button:hover {
+            transform: translateY(-5px)
+        }
+    }
+
+    .bottomcontent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        margin-top: 80px;
+        padding: 32px 0;
+
+        .reserve {
+            font-size: 11px;
+            letter-spacing: 1.6px;
+            color: #434843;
+            opacity: 60%;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+        }
+
+        .slogon {
+            display: flex;
+            gap: 20px;
+            font-size: 11px;
+            letter-spacing: 1.6px;
+            color: #434843;
+            opacity: 60%;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
         }
     }
 }
