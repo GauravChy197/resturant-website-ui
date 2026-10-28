@@ -10,17 +10,12 @@
     padding: 80px 40px 180px 80px;
     gap: 100px;
     flex-grow: 1;
-
-
     margin: auto;
-
 }
 
 .left {
     width: 544px;
     padding: 80px 0 0 0;
-
-
 }
 
 .address {
@@ -60,7 +55,7 @@
 
 .explore {
     margin-top: 40px;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 .explore:hover {
@@ -79,30 +74,24 @@
 
 }
 
-.right {
-    width: 544px;
-    height: 673px;
-    margin-left: 50px;
-
-}
+.right {}
 
 
 .image {
-    height: 647px;
-    width: 518px;
+    width: 544px;
+    height: 673px;
+    margin-left: 50px;
     transform: rotate(2deg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 10px solid #E4E2DE;
-    border-radius: 10px 20px;
+    border: 15px solid #E4E2DE;
+    border-radius: 25px;
 }
 
 img {
+
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 13px;
 }
 
 .middle {
